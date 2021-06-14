@@ -3,6 +3,7 @@ plugins {
   id("kotlin-android")
   id("kotlin-android-extensions")
   id("kotlin-kapt")
+  id("androidx.navigation.safeargs.kotlin")
   //id("com.google.gms.google-services")
   //id("com.google.firebase.appdistribution")
   //id("com.google.firebase.crashlytics")
@@ -34,6 +35,7 @@ android {
       buildConfigField("String", "API_PREFIX", "\"/public\"")
       buildConfigField("String", "API_VERSION", "\"/v1\"")
       buildConfigField("String", "API_KEY", "\"8c2cf3b0bbbcc3fc60b33f8ab975f4f8\"")
+      buildConfigField("String", "P_API_KEY", "\"af66c55e35984411c01409a479414c1b74eb732b\"")
 
       resValue("string", "app_name", "Marvel DEV")
 
@@ -48,6 +50,7 @@ android {
       buildConfigField("String", "API_PREFIX", "\"/public\"")
       buildConfigField("String", "API_VERSION", "\"/v1\"")
       buildConfigField("String", "API_KEY", "\"8c2cf3b0bbbcc3fc60b33f8ab975f4f8\"")
+      buildConfigField("String", "P_API_KEY", "\"af66c55e35984411c01409a479414c1b74eb732b\"")
 
       resValue("string", "app_name", "Marvel")
 
@@ -104,6 +107,9 @@ dependencies {
   kapt(Deps.Kapt.glide)
 
   implementation(Deps.AndroidX.kotlin)
+
+  implementation(Deps.AndroidX.nav_fragment)
+  implementation(Deps.AndroidX.nav_ui)
 
   //implementation(Deps.AndroidX.exo_core)
   //implementation(Deps.AndroidX.exo_ui)

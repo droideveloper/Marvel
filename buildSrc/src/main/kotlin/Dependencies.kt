@@ -9,6 +9,7 @@ object Versions {
   val material = "1.2.1"
   val constraint = "2.0.4"
   val appCompat = "1.2.0"
+  val navComp = "2.3.5"
 
   val gradle = "4.0.1"
   val test = "1.3.0"
@@ -53,6 +54,7 @@ object Deps {
     val firebase_app_dist = "com.google.firebase:firebase-appdistribution-gradle:${Versions.firebase_app_dist}"
     val firebase_crashlytics = "com.google.firebase:firebase-crashlytics-gradle:${Versions.firebase_crashlytcis}"
     val google = "com.google.gms:google-services:${Versions.google_services}"
+    val nav_safe_args = "androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.navComp}"
   }
 
   object AndroidX {
@@ -68,6 +70,8 @@ object Deps {
     val glide = "com.github.bumptech.glide:glide:${Versions.glide}"
     val http = "com.squareup.okhttp3:logging-interceptor:${Versions.http}"
 
+    val nav_fragment = "androidx.navigation:navigation-fragment-ktx:${Versions.navComp}"
+    val nav_ui = "androidx.navigation:navigation-ui-ktx:${Versions.navComp}"
 
     val moshi = "com.squareup.moshi:moshi:${Versions.moshi}"
 
