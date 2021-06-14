@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:support="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/viewTextTitle"
+        android:text="@string/str_comics"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginEnd="@dimen/dp16"
+        support:layout_constraintStart_toStartOf="parent"
+        support:layout_constraintEnd_toEndOf="parent"
+        support:layout_constraintTop_toTopOf="parent"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/viewRecycler"
+        android:scrollbars="none"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp16"
+        android:paddingStart="@dimen/dp16"
+        android:paddingEnd="@dimen/dp16"
+        android:clipToPadding="false"
+        support:layout_constraintTop_toBottomOf="@+id/viewTextTitle"
+        support:layout_constraintStart_toStartOf="parent"
+        support:layout_constraintEnd_toEndOf="parent"
+        support:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp128" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
