@@ -19,7 +19,8 @@ data class Comic(
         val ean: String? = null,
         val issn: String? = null,
         val format: String? = null,
-        val pageCount: Int? = null
+        val pageCount: Int? = null,
+        val thumbnail: Thumbnail? = null
 ): Parcelable {
 
     companion object {

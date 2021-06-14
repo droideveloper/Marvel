@@ -1,2 +1,4 @@
 <resources>
+    <string name="str_characters">Characters</string>
+    <string name="str_comics">Comics</string>
 </resources>

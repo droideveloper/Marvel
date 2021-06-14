@@ -6,13 +6,15 @@ import dagger.android.support.AndroidSupportInjectionModule
 import io.fs.marvel.App
 import io.fs.marvel.common.di.module.AppModule
 import io.fs.marvel.common.di.module.ProviderAppModule
+import io.fs.marvel.common.di.module.ProviderNetworkModule
 import javax.inject.Singleton
 
 @Singleton
 @Component(modules = [
     AndroidSupportInjectionModule::class,
     AppModule::class,
-    ProviderAppModule::class
+    ProviderAppModule::class,
+    ProviderNetworkModule::class
 ])
 interface AppComponent: AndroidInjector<App> {
 
